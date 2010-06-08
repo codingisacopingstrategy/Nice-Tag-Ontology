@@ -295,162 +295,162 @@
 <!-- * Relations used with nt:Aggregate TagAction * Fab: I fell like this difference is already stated by the types of the tag action Alex: If you're alluding to the communityTagCollection, I'd say not quite : a communitySign has been collectively agreed upon or collectively used and re-used, like a hashtag, while a communityTagAction is just a search construct I see.-->
 
 <rdf:Property rdf:ID="hasCommunitySign">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Has community sign</label>
-<label xml:lang="fr">A pour signe collectif</label>
-<comment xml:lang="en">Corresponds to uses of collectively approved labels shared inside a community.</comment>
-<comment xml:lang="fr">Correspond à des usages collectivement constitués de libellés choisis par une communauté.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Has community sign</label>
+ <label xml:lang="fr">A pour signe collectif</label>
+ <comment xml:lang="en">Corresponds to uses of collectively approved labels shared inside a community.</comment>
+ <comment xml:lang="fr">Correspond à des usages collectivement constitués de libellés choisis par une communauté.</comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID="hasPersonalSign">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Has personal sign</label>
-<label xml:lang="fr">A pour signe personnel</label>
-<comment xml:lang="en">Corresponds to uses of user-defined labels that can either serve to gather, categorize, distinguish resources or simply add structure to one's collection of tags.</comment>
-<comment xml:lang="fr">Correspond à l'emploi de libellés définis par un utilisateur pour rassembler, catégoriser ou distinguer des ressources voire simplement structurer sa propre collection de tags.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Has personal sign</label>
+ <label xml:lang="fr">A pour signe personnel</label>
+ <comment xml:lang="en">Corresponds to uses of user-defined labels that can either serve to gather, categorize, distinguish resources or simply add structure to one's collection of tags.</comment>
+ <comment xml:lang="fr">Correspond à l'emploi de libellés définis par un utilisateur pour rassembler, catégoriser ou distinguer des ressources voire simplement structurer sa propre collection de tags.</comment>
 </rdf:Property>
 
 <!-- * Relation used with nt:ExpressFeeling TagAction * -->
 
 <rdf:Property rdf:ID="makesMeFeel">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Makes me feel</label>
-<label xml:lang="fr">Produit sur moi</label>
-<comment xml:lang="en">Property used to indicate that the label of a tag denotes/expresses an emotional reaction.</comment>
-<comment xml:lang="fr">Propriété utilisée pour indiquer que le libellé d'un tag dénote/exprime une réaction émotionnelle.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Makes me feel</label>
+ <label xml:lang="fr">Produit sur moi</label>
+ <comment xml:lang="en">Property used to indicate that the label of a tag denotes/expresses an emotional reaction.</comment>
+ <comment xml:lang="fr">Propriété utilisée pour indiquer que le libellé d'un tag dénote/exprime une réaction émotionnelle.</comment>
 </rdf:Property>
 
 <!-- * Relation used with nt:Evaluate TagAction * -->
 
 <rdf:Property rdf:ID="isWorth">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Is worth</label>
-<label xml:lang="fr">Vaut</label>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Is worth</label>
+ <label xml:lang="fr">Vaut</label>
 <!-- <range rdf:resource=""/>Maybe we should create a specific class for evaluations (other people might want to refine it after) 
 fdy: as I already told it, I would keep these questions of sign classes for later on.
 Status : Agree (Alex, mildly) Disagree  -->
-<comment xml:lang="en">Property used whenever a resource is evaluated, ranked, etc. thanks to a label ("***", "5/10", "0", "best", etc.).</comment>
-<comment xml:lang="fr">Propriété utilisée pour indiquer qu'une ressource est évaluée, classée, etc. à l'aide d'un libellé ("***", "5/10", "0", "le meilleur", etc.).</comment>
+ <comment xml:lang="en">Property used whenever a resource is evaluated, ranked, etc. thanks to a label ("***", "5/10", "0", "best", etc.).</comment>
+ <comment xml:lang="fr">Propriété utilisée pour indiquer qu'une ressource est évaluée, classée, etc. à l'aide d'un libellé ("***", "5/10", "0", "le meilleur", etc.).</comment>
 </rdf:Property>
 
 <!-- * Relation used with nt:Assert TagAction * -->
 
 <rdf:Property rdf:ID="isAbout">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Is about</label>
-<label xml:lang="fr">A pour thème</label>
-<comment xml:lang="en">Property used when the label of a tag describes the topic of a resource.</comment>
-<comment xml:lang="fr">Propriété utilisé pour indiquer que le libellé d'un tag décrit le thème d'un ressource.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Is about</label>
+ <label xml:lang="fr">A pour thème</label>
+ <comment xml:lang="en">Property used when the label of a tag describes the topic of a resource.</comment>
+ <comment xml:lang="fr">Propriété utilisé pour indiquer que le libellé d'un tag décrit le thème d'un ressource.</comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID="hasForMedium">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Has for medium</label>
-<label xml:lang="fr">Est un medium de type</label>
-<domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
-<comment xml:lang="en">Property used when the label of a tag indicates the medium which an HTTP-accessible Web representation belongs to ("forum", "video", "photo", "Webpage", "Webservice", etc.).</comment>
-<comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique de quel média la représentation de la ressource à laquelle on accède ressortit ("forum", "vidéo", "photo", "page Web", "Webservice", etc.).</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Has for medium</label>
+ <label xml:lang="fr">Est un medium de type</label>
+ <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
+ <comment xml:lang="en">Property used when the label of a tag indicates the medium which an HTTP-accessible Web representation belongs to ("forum", "video", "photo", "Webpage", "Webservice", etc.).</comment>
+ <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique de quel média la représentation de la ressource à laquelle on accède ressortit ("forum", "vidéo", "photo", "page Web", "Webservice", etc.).</comment>
 </rdf:Property>
 
 
 <rdf:Property rdf:ID="isRelevant">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Is relevant</label>
-<label xml:lang="fr">Est pertinent</label>
-<comment xml:lang="en">Property used to subsume "isRelevantToSb" and "isRelevantToSt".</comment>
-<comment xml:lang="fr">Propriété utilisée pour subsumer "isRelevantToSb" et "isRelevantToSt".</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Is relevant</label>
+ <label xml:lang="fr">Est pertinent</label>
+ <comment xml:lang="en">Property used to subsume "isRelevantToSb" and "isRelevantToSt".</comment>
+ <comment xml:lang="fr">Propriété utilisée pour subsumer "isRelevantToSb" et "isRelevantToSt".</comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID="isRelevantToSb">
-<subPropertyOf rdf:resource="#isRelevantTo"/>
-<label xml:lang="en">Is relevant to somebody</label>
-<label xml:lang="fr">Est pertinent pour quelqu'un</label>
-<range rdf:resource="http://xmlns.com/foaf/0.1/Person"/> 
-<comment xml:lang="en">Subproperty of 'is relevant to' used to link a resource to the person whom it may be relevant to. In other words, in such a way that no immediate formal link can be inferred between the two except from the point of view of a precise person in addition to the user who defined the said link.</comment>
-<comment xml:lang="fr">Sous-propriété de 'isRelevantTo', utilisée pour associer une ressource à une personne de telle manière qu'aucun lien formel ne puisse être inféré entre les deux excepté du point de vue du destinataire et du destinateur du tag.</comment>
+ <subPropertyOf rdf:resource="#isRelevantTo"/>
+ <label xml:lang="en">Is relevant to somebody</label>
+ <label xml:lang="fr">Est pertinent pour quelqu'un</label>
+ <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/> 
+ <comment xml:lang="en">Subproperty of 'is relevant to' used to link a resource to the person whom it may be relevant to. In other words, in such a way that no immediate formal link can be inferred between the two except from the point of view of a precise person in addition to the user who defined the said link.</comment>
+ <comment xml:lang="fr">Sous-propriété de 'isRelevantTo', utilisée pour associer une ressource à une personne de telle manière qu'aucun lien formel ne puisse être inféré entre les deux excepté du point de vue du destinataire et du destinateur du tag.</comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID="isRelevantToSt">
-<subPropertyOf rdf:resource="#isRelevantTo"/>
-<label xml:lang="en">Is relevant to something</label>
-<label xml:lang="fr">Est pertinent par rapport à quelque chose</label>
-<comment xml:lang="en">Subproperty of 'is relevant to', used to link a resource to anything that it may be relevant to. In other words, in such a way that no immediate formal link can be inferrend between the two except from the point of view of the creator of the said link.</comment>
-<comment xml:lang="fr">Sous-propriété de "isRelevantTo', utilisée pour lier quoi que ce soit à une ressource de telle manière qu'aucun lien immédiat formel ne puisse être inféré entre les deux excepté du point de vue du créateur d'un tel lien.</comment>
+ <subPropertyOf rdf:resource="#isRelevantTo"/>
+ <label xml:lang="en">Is relevant to something</label>
+ <label xml:lang="fr">Est pertinent par rapport à quelque chose</label>
+ <comment xml:lang="en">Subproperty of 'is relevant to', used to link a resource to anything that it may be relevant to. In other words, in such a way that no immediate formal link can be inferrend between the two except from the point of view of the creator of the said link.</comment>
+ <comment xml:lang="fr">Sous-propriété de "isRelevantTo', utilisée pour lier quoi que ce soit à une ressource de telle manière qu'aucun lien immédiat formel ne puisse être inféré entre les deux excepté du point de vue du créateur d'un tel lien.</comment>
 </rdf:Property>
 
 <!-- * Relation used with nt:SetTask TagAction * -->
 
 <rdf:Property rdf:ID="elicitsAction">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Elicits action</label>
-<label xml:lang="fr">Suscite l'action</label>
-<comment xml:lang="en">Property used when a resource elicits an action to be performed.</comment>
-<comment xml:lang="fr">Propriété utilisée quand une ressource suscite l'accomplissement d'une action.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Elicits action</label>
+ <label xml:lang="fr">Suscite l'action</label>
+ <comment xml:lang="en">Property used when a resource elicits an action to be performed.</comment>
+ <comment xml:lang="fr">Propriété utilisée quand une ressource suscite l'accomplissement d'une action.</comment>
 </rdf:Property>
 
 <!-- * Relation used with nt:Share TagAction * -->
 
 <rdf:Property rdf:ID="sentTo"> <!-- Fab: I would stop at is relevant for and leave operationalization (sending notifying, etc.) out of scope Alex: we would use it with relevantFor then ? We could use indeed relevantFor with Share TagAction. But to limit ourselves to relevantFor seems a bit too restrictive for me. Fab: To me to send is to decide what to do with something relevant; and there are many things to do and we should not get into that Alex: I agree but "for:-username" already exist so, we're not so much treading on adangerous path than taking into account what already exists -->
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Sent to</label>
-<label xml:lang="fr">Envoyé à</label>
-<domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
-<range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
-<comment xml:lang="en">Property used when the label of a tag indicates to whom a resource was suggested (models existing features like delicious "for:-username" tags).</comment>
-<comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique à quel utilisateur une ressource a été suggérée (modélise des fonctionalités existantes telles que les tags "for:-username" sur Delicious).</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Sent to</label>
+ <label xml:lang="fr">Envoyé à</label>
+ <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
+ <range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+ <comment xml:lang="en">Property used when the label of a tag indicates to whom a resource was suggested (models existing features like delicious "for:-username" tags).</comment>
+ <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique à quel utilisateur une ressource a été suggérée (modélise des fonctionalités existantes telles que les tags "for:-username" sur Delicious).</comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID="sentBy">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Sent by</label>
-<label xml:lang="fr">Envoyé par</label>
-<domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
-<range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
-<comment xml:lang="en">Corresponds to uses of labels that indicate by whom a resource was suggested.</comment>
-<comment xml:lang="fr">Correspond à l'utilisation de signes qui indiquent à qui une ressource a été suggérée.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Sent by</label>
+ <label xml:lang="fr">Envoyé par</label>
+ <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
+ <range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+ <comment xml:lang="en">Corresponds to uses of labels that indicate by whom a resource was suggested.</comment>
+ <comment xml:lang="fr">Correspond à l'utilisation de signes qui indiquent à qui une ressource a été suggérée.</comment>
 </rdf:Property>
 
 <!-- * Relation used with nt:GiveAccesRights TagAction * -->
 
 <rdf:Property rdf:ID="canBeReadBy">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Can be read by</label>
-<label xml:lang="fr">Peut être lu par</label>
-<domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
-<range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-<comment xml:lang="en">Property used when the label of a tag indicates to whom access rights to the tagged resource are confered .</comment>
-<comment xml:lang="fr">Corresponds à l'utilisation de tags dont le libellé indique le destinataire auquel des droits d'accès définis sur une ressource donnée ont été octroyés.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Can be read by</label>
+ <label xml:lang="fr">Peut être lu par</label>
+ <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
+ <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <comment xml:lang="en">Property used when the label of a tag indicates to whom access rights to the tagged resource are confered .</comment>
+ <comment xml:lang="fr">Corresponds à l'utilisation de tags dont le libellé indique le destinataire auquel des droits d'accès définis sur une ressource donnée ont été octroyés.</comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID="cannotBeReadBy">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Cannot Be Read By</label>
-<label xml:lang="fr">Ne peut être lu par</label>
-<domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
-<range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-<comment xml:lang="en">Property used when the label of a tag indicates to whom access right to the tagged resource are denied.</comment>
-<comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique le destinataire auquel des droits d'accès définis sur une ressource donnée ont été déniés.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Cannot Be Read By</label>
+ <label xml:lang="fr">Ne peut être lu par</label>
+ <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
+ <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <comment xml:lang="en">Property used when the label of a tag indicates to whom access right to the tagged resource are denied.</comment>
+ <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique le destinataire auquel des droits d'accès définis sur une ressource donnée ont été déniés.</comment>
 </rdf:Property>
 
 <!-- * Relation used with the nt:Point TagAction * -->
 
 <rdf:Property rdf:ID="hasPart">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Has part</label>
-<label xml:lang="fr">A pour partie</label>
-<domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
-<range rdf:resource="#PartOfWebRepresentation"/>
-<comment xml:lang="en">Property used when the label of a tag indicates which part of a Webpresentation is being tagged.</comment>
-<comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique quelle partie de la représentation d'une ressource sur le Web est taguée.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Has part</label>
+ <label xml:lang="fr">A pour partie</label>
+ <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
+ <range rdf:resource="#PartOfWebRepresentation"/>
+ <comment xml:lang="en">Property used when the label of a tag indicates which part of a Webpresentation is being tagged.</comment>
+ <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique quelle partie de la représentation d'une ressource sur le Web est taguée.</comment>
 </rdf:Property>
 
 <!-- * Relation used with the nt:Ask TagAction * -->
 
 <rdf:Property rdf:ID="raisesQuestionAbout">
-<subPropertyOf rdf:resource="#isRelatedTo"/>
-<label xml:lang="en">Saises question about</label>
-<label xml:lang="fr">Soulève une interrogation au sujet de</label>
-<comment xml:lang="en">Property used when the label of a tag indicates that a question is being asked.</comment>
-<comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique qu'une question est posée.</comment>
+ <subPropertyOf rdf:resource="#isRelatedTo"/>
+ <label xml:lang="en">Saises question about</label>
+ <label xml:lang="fr">Soulève une interrogation au sujet de</label>
+ <comment xml:lang="en">Property used when the label of a tag indicates that a question is being asked.</comment>
+ <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique qu'une question est posée.</comment>
 </rdf:Property>
 </rdf:RDF>
