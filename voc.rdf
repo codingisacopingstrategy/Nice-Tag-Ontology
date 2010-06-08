@@ -35,7 +35,7 @@
   <dc:title xml:lang="fr">L'Ontologie Nice Tag</dc:title>
   <dc:description xml:lang="fr">NiceTag est une ontologie décrivant le plus généralement possible les tags ou plutôt les actes de taguer comme des actes de langage survenant sur le Web</dc:description>
   <dc:title xml:lang="nl">Nice Tag ontologie</dc:title>
-  <dc:description xml:lang="nl">Nice tag is een ontologie die tags beschrijft, meer precies de handeling van het taggen, zo algemeen mogelijk, als op het web plaats vindende taalhandelingen.</dc:description>
+  <dc:description xml:lang="nl">Nice tag is een ontologie die tags beschrijft als op het web plaats vindende taalhandelingen. Meer precies beschrijft zij de handeling van het taggen, zo algemeen mogelijk.</dc:description>
   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
   <cc:attributionURL rdf:resource="http://ns.inria.fr/nicetag/"/>
   <cc:licence rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"/>
