@@ -311,13 +311,13 @@
 <!-- **** Properties **** -->
 
 <rdf:Property rdf:ID="belongToTagCollection">
-<label xml:lang="en">Belongs to tag collection</label>
-<label xml:lang="fr">Appartient à une collection de tags</label>
+ <label xml:lang="en">Belongs to tag collection</label>
+ <label xml:lang="fr">Appartient à une collection de tags</label>
  <label xml:lang="nl">Behoort toe aan tagverzameling</label>
-<domain rdf:resource="#TagAction"/>
-<range rdf:resource="#TagsCollection"/>
-<comment xml:lang="en">Property used to link a single and well individuated TagAction to a TagCollection to account for the various levels of aggregation provided by common tagging applications. There exist different ways to aggregate tags (for instance, http://delicious.com/fabion_gandon/OWL gives a Web representation of all taggings of user "fabien_gandon" involving the tag labeled 'OWL' on delicious.com at time "t").</comment>
-<comment xml:lang="fr">Propriété employée pour associer un acte de taguer singulier à une collection de tags. Ceci sert à rendre compte des multiples manières d'aggréger les tags offertes par les différents services existants (l'URI http://delicious.com/fabion_gandon/OWL permet par exemple d'accéder à une représentation de tous les actes de taguer accomplis par le titulaire du compte "fabien_gandon" où figure le libellé "OWL" sur delicious.com à un instant "t").</comment>
+ <domain rdf:resource="#TagAction"/>
+ <range rdf:resource="#TagsCollection"/>
+ <comment xml:lang="en">Property used to link a single and well individuated TagAction to a TagCollection to account for the various levels of aggregation provided by common tagging applications. There exist different ways to aggregate tags (for instance, http://delicious.com/fabion_gandon/OWL gives a Web representation of all taggings of user "fabien_gandon" involving the tag labeled 'OWL' on delicious.com at time "t").</comment>
+ <comment xml:lang="fr">Propriété employée pour associer un acte de taguer singulier à une collection de tags. Ceci sert à rendre compte des multiples manières d'aggréger les tags offertes par les différents services existants (l'URI http://delicious.com/fabion_gandon/OWL permet par exemple d'accéder à une représentation de tous les actes de taguer accomplis par le titulaire du compte "fabien_gandon" où figure le libellé "OWL" sur delicious.com à un instant "t").</comment>
 </rdf:Property>
 
 <!-- ** Sub-properties of nt:isRelatedTo ** -->
