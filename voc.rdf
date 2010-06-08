@@ -493,7 +493,7 @@ Status : Agree (Alex, mildly) Disagree  -->
 
 <rdf:Property rdf:ID="raisesQuestionAbout">
  <subPropertyOf rdf:resource="#isRelatedTo"/>
- <label xml:lang="en">Saises question about</label>
+ <label xml:lang="en">Raises question about</label>
  <label xml:lang="fr">Soulève une interrogation au sujet de</label>
  <label xml:lang="nl">Roept vragen op over</label>
  <comment xml:lang="en">Property used when the label of a tag indicates that a question is being asked.</comment>
