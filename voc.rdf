@@ -48,6 +48,7 @@
 <owl:Class rdf:ID="AnnotatedResource">
  <label xml:lang="en">Annotated resource</label>
  <label xml:lang="fr">Ressource annotée</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Used to represent the HTTP-accessible realization of an information resource on the Web. The equivalent of irw:WebRepresentation, the Annotated Resource is that which generally triggers the act of tagging. Being dereferenceable by definition, it also provides the address that will be bookmarked on delicious-like sites and work like an anchor for tags. This said, the resource being tagged is in no way limited to HTTP-accessible data (indeed, what supports an act of tagging may very well be what the Web representation represents, a non-information resource for example, instead of the Web representation itself).</comment>
  <comment xml:lang="fr">Utilisé pour représenter la réalisation d'une ressource informationnelle accessible sur le Web via le protocole HTTP. La ressource annotée, consultable en ligne, est celle-là même qui déclenche généralement l'acte de taguer. En quoi d'ailleurs elle est l'équivalent de la classe irw:WebRepresentation. Etant par définition déréférençable, elle fournit également l'adresse qui servira d'ancrage aux tags par l'intermédiaire du signet, selon le modèle proposé par delicious. Par contraste, la ressource taguée n'est, quant à elle, aucunement limitée à des données accessibles sur le Web (ce qui est taguée peut bien se révéler ne pas être autre chose que ce que la représentation d'un ressource représente, une ressource non-informationnelle par exemple, plutôt que cette représentation elle-même).</comment>
  <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
@@ -56,6 +57,7 @@
 <owl:Class rdf:ID="TaggedResource">
  <label xml:lang="en">Tagged resource</label>
  <label xml:lang="fr">Ressource taguée</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Used to represent the resource being tagged. Equivalent of irw:Resource.</comment>
  <comment xml:lang="fr">Utilisé pour représenter la resource taguée. Equivalent de irw:Resource.</comment>
  <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/web/irw.owl#Resource"/>
@@ -64,6 +66,7 @@
 <rdf:Property rdf:ID="isRelatedTo">
  <label xml:lang="en">Is related to</label>
  <label xml:lang="fr">Est relié à</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="#TaggedResource"/>
  <subClassOf>
   <owl:Restriction>
@@ -79,6 +82,7 @@
  <subClassOf rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <label xml:lang="en">Part Of Web representation</label>
  <label xml:lang="fr">Partie de la représentation d'une ressource sur le Web</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Used to represent the part of the Web representation resource being tagged after the "Point" TagAction is used.</comment>
  <comment xml:lang="fr">Utilisé pour représenter la partie de la représentation d'une ressource qui est taguée lorsque qu'il est fait usage de l'acte de taguer "Pointer".</comment>
 </owl:Class>
@@ -92,6 +96,7 @@
  </owl:unionOf>
  <label xml:lang="en">Tag action</label>
  <label xml:lang="fr">Acte de taguer</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">A super class to describe every tag action as modelled by a named graph according to RDF Graph model (RDFG).</comment>
  <comment xml:lang="fr">Une super-classe qui permet de décrire et de modéliser les actes de taguer à l'aide d'un graphe nommé et au moyen du modèle de graphe RDF (RDFG).</comment>
 </owl:Class>
@@ -101,6 +106,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Owner tag action</label>
  <label xml:lang="fr">Acte de taguer d'un propriétaire</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Used to describe an act of tagging performed by the owner of the URI that identifies the tagged resource.</comment>
  <comment xml:lang="fr">Utilisé pour décrire un acte de taguer accompli par le propriétaire de l'URI qui identifie la ressource taguée.</comment>
 </owl:Class>
@@ -110,6 +116,7 @@
  <owl:disjointWith rdf:resource="#OwnerTagAction" />
  <label xml:lang="en">Visitor tag action</label>
  <label xml:lang="fr">Acte de taguer d'un visiteur</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Used to describe an act of tagging performed by a the person who browsed a Web representation.</comment>
  <comment xml:lang="fr">Utilisé pour décrire l'acte de taguer accompli par une personne ayant eu accès à la représentation d'une ressource sur le Web.</comment>
 </owl:Class>
@@ -120,6 +127,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Assert</label>
  <label xml:lang="fr">Asserter</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to assert anything about a resource.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec tag dès lors que celui-ci est utilisé pour affirmer quoi que ce soit à propos d'une ressource.</comment>
 </owl:Class>
@@ -128,6 +136,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Express feelings</label>
  <label xml:lang="fr">Exprimer un ressenti</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to express a feeling, an emotion, etc.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec tag dès lors que celui-ci est utilisé pour exprimer un sentiment, une émotion, etc.</comment>
 </owl:Class>
@@ -136,6 +145,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Evaluate</label>
  <label xml:lang="fr">Evaluer</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to give a notation, a mark of approval and disapproval, or,
   more generally speaking, an evaluation.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag dès lors que celui-ci est utilisé pour donner une note, marquer son approbation ou sa désapprobation ou, plus généralement, produirez une évaluation.</comment>
@@ -145,6 +155,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Give access rights to</label>
  <label xml:lang="fr">Accorder des droits d'accès à</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to define to whom access rights to a resource are granted or denied.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag dès lors que celui-ci est utilisé pour définir les personnes auxquelles sont octroyés des droits d'accès à des ressource en ligne (permission ou refus).</comment>
 </owl:Class>
@@ -153,6 +164,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Point</label>
  <label xml:lang="fr">Pointer</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to point to a specific part of a Web representation (the segment of a video,
   a user-generated commentary to a newspaper article, etc.).</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag dès lors que celui-ci est utilisé pour faire référence à une portion spécifique de la représentation 
@@ -163,6 +175,7 @@
  <subClassOf rdf:resource="#VisitorTagAction"/>
  <label xml:lang="en">Set task</label>
  <label xml:lang="fr">Définir une tâche</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a "todo" tag whenever it is used to create a task awaiting performance.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag de type "àfaire" dès lors que celui-ci est utilisé pour définir une tâche attendant sa réalisation.</comment>
 </owl:Class>
@@ -171,6 +184,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Share</label>
  <label xml:lang="fr">Partager</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to share the representation of a WebResource on various services - Twitter or Delicious for instance - with the owner of a sioc:UserAccount (not necessarily a foaf:Person as it might be either a bot, a person or an institution whose representatives may well vary over time).</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag dès lors que celui-ci est utilisé pour partager une représentation d'une ressource sur le Web, notamment sur Delicious ou Twitter. Ce partage ne se fait pas nécessairement avec une autre personne mais plutôt avec le  titulaire d'un compte sur l'un ou l'autre de ces services (sioc:UserAccount, qui n'est pas nécessairement une foaf:Person étant donné qu'il peut s'agir aussi bien d'un robot, d'une personne ou encore d'une institution dont les représentants sont potentiellement amenés à varier au fil du temps).</comment>
 </owl:Class>
@@ -179,6 +193,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Aggregate</label>
  <label xml:lang="fr">Agréger</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed whenever resources are aggregated with a collectively defined tag.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit lorsque des ressources sont aggrégées autour d'un tag défini de manière collective.</comment>
 </owl:Class>
@@ -187,6 +202,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Ask</label>
  <label xml:lang="fr">Poser une question</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes the action that is performed with a tag by asking a question.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec tag dès lors que celui-ci est utilisé pour poser une question.</comment>
 </owl:Class>
@@ -195,6 +211,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Manual tag action</label>
  <label xml:lang="fr">Acte de taguer manuel</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tags as manually associated to a resource by a human.</comment>
  <comment xml:lang="fr">Décrit des tags associés manuellement à une ressource par un être humain.</comment>
 </owl:Class>
@@ -203,6 +220,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Auto tag action</label>
  <label xml:lang="fr">Acte de taguer automatique</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tags as automatically generated and/or associated to a resource by a computer.</comment>
  <comment xml:lang="fr">Décrit des tags générés et/ou associés automatiquement à une ressource par une machine.</comment>
 </owl:Class>
@@ -211,6 +229,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Web concept tag action</label>
  <label xml:lang="fr">Acte de taguer par concept Web</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tagging involving Web concepts (such as geonames).</comment>
  <comment xml:lang="fr">Utilisé pour décrire un taggage effectué à l'aide de concepts Web (tels que geonames).</comment>
 </owl:Class>
@@ -219,6 +238,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Syntactic Tag Action</label>
  <label xml:lang="fr">Acte de taguer syntaxique</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tags whose labels are following a given syntax for improved precision and tractability.</comment>
  <comment xml:lang="fr">Décrit des tags dont les libellés mobilisent une certaine syntaxe pour accroître leur précision et leur capacité à être manipulés.</comment>
 </owl:Class>
@@ -227,6 +247,7 @@
  <subClassOf rdf:resource="#SyntacticTagAction"/>
  <label xml:lang="en">Machine tag action</label>
  <label xml:lang="fr">Acte de taguer avec machine tag</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tags whose labels are using the syntax of machine tags as implemented first in Flickr.com.</comment>
  <comment xml:lang="fr">Décrit des tags dont les libellés mobilisent la syntaxe des machine tags telle qu'implémentée d'abord sur le site Flickr.com.</comment>
 </owl:Class>
@@ -235,6 +256,7 @@
  <subClassOf rdf:resource="#SyntacticTagAction"/>
  <label xml:lang="en">N-tuple tag action</label>
  <label xml:lang="fr">Acte de taguer avec tag à n-dimensions</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tagging involving N-tuple tags (double tags, triple tags, etc.).</comment>
  <comment xml:lang="fr">Utilisé pour décrire des actes de taguer impliquant des tags dont les libellés ont n-dimensions (double tags, triple tags, etc.).</comment>
 </owl:Class>
@@ -243,6 +265,7 @@
  <subClassOf rdf:resource="#TagAction"/>
  <label xml:lang="en">Disambiguate Tag Action</label>
  <label xml:lang="fr">Acte de taguer avec désambigüisation</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Used when the sign used to tag is disambiguated.</comment>
  <comment xml:lang="fr">Utilisé lorsque le sign utilisé pour tagger est désambiguïsé.</comment>
 </owl:Class>
@@ -251,6 +274,7 @@
  <subClassOf rdf:resource="#N-TupleTagAction"/> 
  <label xml:lang="en">N-tuple tag action machine tag syntax</label>
  <label xml:lang="fr">Acte de taguer avec tag à n-dimensions et syntaxe de machine tags</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Describes tagging involving N-tuple tags which follow machine tags typed syntax in acontext where Flickr-like APIs are lacking.</comment>
  <comment xml:lang="fr">Utilisé pour décrire un acte de taguer impliquant des tags dont les libellés ont n-dimensions et suivent la syntaxe des machine tags mais dans un contexte où des APIs semblables à celle de Flickr font défaut.</comment>
 <owl:sameAs rdf:resource="#MachineTagAction"/>
@@ -261,6 +285,7 @@
 <owl:Class rdf:ID="TagsCollection">
  <label xml:lang="en">Tags collection</label>
  <label xml:lang="fr">Collection de tags</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Undefined collection of tags.</comment>
  <comment xml:lang="fr">Une collection de tags ne répondant à aucune définition particulière.</comment>
 </owl:Class>
@@ -268,6 +293,7 @@
 <owl:Class rdf:ID="CommunityTagCollection">
  <label xml:lang="en">Community tag collection</label>
  <label xml:lang="fr">Collection de tags communautaire</label>
+ <label xml:lang="nl"></label>
  <subClassOf rdf:resource="#TagsCollection"/>
  <comment xml:lang="en">A collection of tags generated by the users of a given online community or Web service.</comment>
  <comment xml:lang="fr">Une collection de tag constituée par les utilisateurs d'une communauté ou d'un service donnés.</comment>
@@ -276,6 +302,7 @@
 <owl:Class rdf:ID="PersonalTagCollection">
  <label xml:lang="en">Personal tag collection</label>
  <label xml:lang="fr">Collection de tags personnelle</label>
+ <label xml:lang="nl"></label>
  <subClassOf rdf:resource="#TagsCollection"/>
  <comment xml:lang="en">A colection of tags generated by a single user.</comment>
  <comment xml:lang="fr">Une collection de tags constituée par un utilisateur précis.</comment>
@@ -300,6 +327,7 @@
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Has community sign</label>
  <label xml:lang="fr">A pour signe collectif</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Corresponds to uses of collectively approved labels shared inside a community.</comment>
  <comment xml:lang="fr">Correspond à des usages collectivement constitués de libellés choisis par une communauté.</comment>
 </rdf:Property>
@@ -308,6 +336,7 @@
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Has personal sign</label>
  <label xml:lang="fr">A pour signe personnel</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Corresponds to uses of user-defined labels that can either serve to gather, categorize, distinguish resources or simply add structure to one's collection of tags.</comment>
  <comment xml:lang="fr">Correspond à l'emploi de libellés définis par un utilisateur pour rassembler, catégoriser ou distinguer des ressources voire simplement structurer sa propre collection de tags.</comment>
 </rdf:Property>
@@ -318,6 +347,7 @@
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Makes me feel</label>
  <label xml:lang="fr">Produit sur moi</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Property used to indicate that the label of a tag denotes/expresses an emotional reaction.</comment>
  <comment xml:lang="fr">Propriété utilisée pour indiquer que le libellé d'un tag dénote/exprime une réaction émotionnelle.</comment>
 </rdf:Property>
@@ -328,6 +358,7 @@
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Is worth</label>
  <label xml:lang="fr">Vaut</label>
+ <label xml:lang="nl"></label>
 <!-- <range rdf:resource=""/>Maybe we should create a specific class for evaluations (other people might want to refine it after) 
 fdy: as I already told it, I would keep these questions of sign classes for later on.
 Status : Agree (Alex, mildly) Disagree  -->
@@ -341,6 +372,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Is about</label>
  <label xml:lang="fr">A pour thème</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Property used when the label of a tag describes the topic of a resource.</comment>
  <comment xml:lang="fr">Propriété utilisé pour indiquer que le libellé d'un tag décrit le thème d'un ressource.</comment>
 </rdf:Property>
@@ -349,6 +381,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Has for medium</label>
  <label xml:lang="fr">Est un medium de type</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <comment xml:lang="en">Property used when the label of a tag indicates the medium which an HTTP-accessible Web representation belongs to ("forum", "video", "photo", "Webpage", "Webservice", etc.).</comment>
  <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique de quel média la représentation de la ressource à laquelle on accède ressortit ("forum", "vidéo", "photo", "page Web", "Webservice", etc.).</comment>
@@ -359,6 +392,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Is relevant</label>
  <label xml:lang="fr">Est pertinent</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Property used to subsume "isRelevantToSb" and "isRelevantToSt".</comment>
  <comment xml:lang="fr">Propriété utilisée pour subsumer "isRelevantToSb" et "isRelevantToSt".</comment>
 </rdf:Property>
@@ -367,6 +401,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelevantTo"/>
  <label xml:lang="en">Is relevant to somebody</label>
  <label xml:lang="fr">Est pertinent pour quelqu'un</label>
+ <label xml:lang="nl"></label>
  <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/> 
  <comment xml:lang="en">Subproperty of 'is relevant to' used to link a resource to the person whom it may be relevant to. In other words, in such a way that no immediate formal link can be inferred between the two except from the point of view of a precise person in addition to the user who defined the said link.</comment>
  <comment xml:lang="fr">Sous-propriété de 'isRelevantTo', utilisée pour associer une ressource à une personne de telle manière qu'aucun lien formel ne puisse être inféré entre les deux excepté du point de vue du destinataire et du destinateur du tag.</comment>
@@ -376,6 +411,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelevantTo"/>
  <label xml:lang="en">Is relevant to something</label>
  <label xml:lang="fr">Est pertinent par rapport à quelque chose</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Subproperty of 'is relevant to', used to link a resource to anything that it may be relevant to. In other words, in such a way that no immediate formal link can be inferrend between the two except from the point of view of the creator of the said link.</comment>
  <comment xml:lang="fr">Sous-propriété de "isRelevantTo', utilisée pour lier quoi que ce soit à une ressource de telle manière qu'aucun lien immédiat formel ne puisse être inféré entre les deux excepté du point de vue du créateur d'un tel lien.</comment>
 </rdf:Property>
@@ -386,6 +422,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Elicits action</label>
  <label xml:lang="fr">Suscite l'action</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Property used when a resource elicits an action to be performed.</comment>
  <comment xml:lang="fr">Propriété utilisée quand une ressource suscite l'accomplissement d'une action.</comment>
 </rdf:Property>
@@ -396,6 +433,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Sent to</label>
  <label xml:lang="fr">Envoyé à</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
  <comment xml:lang="en">Property used when the label of a tag indicates to whom a resource was suggested (models existing features like delicious "for:-username" tags).</comment>
@@ -406,6 +444,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Sent by</label>
  <label xml:lang="fr">Envoyé par</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
  <comment xml:lang="en">Corresponds to uses of labels that indicate by whom a resource was suggested.</comment>
@@ -418,6 +457,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Can be read by</label>
  <label xml:lang="fr">Peut être lu par</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
  <comment xml:lang="en">Property used when the label of a tag indicates to whom access rights to the tagged resource are confered .</comment>
@@ -428,6 +468,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Cannot Be Read By</label>
  <label xml:lang="fr">Ne peut être lu par</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
  <comment xml:lang="en">Property used when the label of a tag indicates to whom access right to the tagged resource are denied.</comment>
@@ -440,6 +481,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Has part</label>
  <label xml:lang="fr">A pour partie</label>
+ <label xml:lang="nl"></label>
  <domain rdf:resource="http://ontologydesignpatterns.org/ont/web/irw.owl#WebRepresentation"/>
  <range rdf:resource="#PartOfWebRepresentation"/>
  <comment xml:lang="en">Property used when the label of a tag indicates which part of a Webpresentation is being tagged.</comment>
@@ -452,6 +494,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <subPropertyOf rdf:resource="#isRelatedTo"/>
  <label xml:lang="en">Saises question about</label>
  <label xml:lang="fr">Soulève une interrogation au sujet de</label>
+ <label xml:lang="nl"></label>
  <comment xml:lang="en">Property used when the label of a tag indicates that a question is being asked.</comment>
  <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique qu'une question est posée.</comment>
 </rdf:Property>
