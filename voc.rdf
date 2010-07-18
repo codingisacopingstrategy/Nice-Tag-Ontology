@@ -61,7 +61,7 @@
  <label xml:lang="nl">Getagde bron</label>
  <comment xml:lang="en">Used to represent the resource being tagged. Equivalent of irw:Resource.</comment>
  <comment xml:lang="fr">Utilisé pour représenter la resource taguée. Equivalent de irw:Resource.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Wordt gebruikt als representatie van de bron die getagd wordt.</comment>
  <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/web/irw.owl#Resource"/>
 </owl:Class>
 
@@ -103,7 +103,7 @@
  <label xml:lang="nl">Taghandeling</label>
  <comment xml:lang="en">A super class to describe every tag action as modelled by a named graph according to RDF Graph model (RDFG).</comment>
  <comment xml:lang="fr">Une super-classe qui permet de décrire et de modéliser les actes de taguer à l'aide d'un graphe nommé et au moyen du modèle de graphe RDF (RDFG).</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Een overkoepelende categorie die toestaat elke taghandeling te beschrijving als een gelabelde graaf binnen het RDF graph model (RDFG).</comment>
 </owl:Class>
 
 
@@ -114,7 +114,7 @@
  <label xml:lang="nl">Taghandeling eigenaar</label>
  <comment xml:lang="en">Used to describe an act of tagging performed by the owner of the URI that identifies the tagged resource.</comment>
  <comment xml:lang="fr">Utilisé pour décrire un acte de taguer accompli par le propriétaire de l'URI qui identifie la ressource taguée.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft een taghandeling verricht door de eigenaar van de URI waarmee de getagde bron </comment>
 </owl:Class>
 
 <owl:Class rdf:ID="VisitorTagAction">
@@ -125,7 +125,7 @@
  <label xml:lang="nl">Taghandeling bezoeker</label>
  <comment xml:lang="en">Used to describe an act of tagging performed by a the person who browsed a Web representation.</comment>
  <comment xml:lang="fr">Utilisé pour décrire l'acte de taguer accompli par une personne ayant eu accès à la représentation d'une ressource sur le Web.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft een taghandeling verricht door een bezoeker van de webrepresentatie van een bron.</comment>
 </owl:Class>
 
 <!-- ** subclasses of TagActions ** -->
@@ -137,7 +137,7 @@
  <label xml:lang="nl">Bevestigen</label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to assert anything about a resource.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec tag dès lors que celui-ci est utilisé pour affirmer quoi que ce soit à propos d'une ressource.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft de handeling die met een tag tot stand komt wanneer deze gebruikt wordt om iets over een bron te bevestigen.</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="ExpressFeelings">
@@ -147,7 +147,7 @@
  <label xml:lang="nl">Gevoelens uitdrukken</label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to express a feeling, an emotion, etc.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec tag dès lors que celui-ci est utilisé pour exprimer un sentiment, une émotion, etc.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft de handeling die met een tag tot stand wanneer deze gebruikt wordt om een gevoel, emotie, etc. uit te drukken.</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="Evaluate">
@@ -180,6 +180,7 @@
   a user-generated commentary to a newspaper article, etc.).</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag dès lors que celui-ci est utilisé pour faire référence à une portion spécifique de la représentation 
  d'une ressource sur le Web (le segment d'une vidéo, un commentaire produit par les utilisateurs au pied d'un article, etc.).</comment>
+ <comment xml:lang="nl">Beschrijft de handeling die verricht wordt</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="SetTask">
@@ -189,7 +190,7 @@
  <label xml:lang="nl">Taak definiëren</label>
  <comment xml:lang="en">Describes the action that is performed with a "todo" tag whenever it is used to create a task awaiting performance.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag de type "àfaire" dès lors que celui-ci est utilisé pour définir une tâche attendant sa réalisation.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft de die verricht wordt met een tag van het type “te doen” wanneer deze gebruikt wordt om een taak te maken in afwachting van haar realisatie.</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="Share">
@@ -199,7 +200,7 @@
  <label xml:lang="nl">Delen</label>
  <comment xml:lang="en">Describes the action that is performed with a tag whenever it is used to share the representation of a WebResource on various services - Twitter or Delicious for instance - with the owner of a sioc:UserAccount (not necessarily a foaf:Person as it might be either a bot, a person or an institution whose representatives may well vary over time).</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec un tag dès lors que celui-ci est utilisé pour partager une représentation d'une ressource sur le Web, notamment sur Delicious ou Twitter. Ce partage ne se fait pas nécessairement avec une autre personne mais plutôt avec le  titulaire d'un compte sur l'un ou l'autre de ces services (sioc:UserAccount, qui n'est pas nécessairement une foaf:Person étant donné qu'il peut s'agir aussi bien d'un robot, d'une personne ou encore d'une institution dont les représentants sont potentiellement amenés à varier au fil du temps).</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft de handeling die verricht wordt met een tag wanneer deze gebruikt wordt om de representatie van een bron op het web te delen met een gebruiker van een dienst als Twitter of Delicious. (sioc:UserAccount, wat niet per se een foaf:Person is aangezien het ook om een bot kan gaan of een instelling die met het verlopen van de tijd door verschillende personen vertegenwoordigd kan worden).</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="Aggregate">
@@ -209,7 +210,7 @@
  <label xml:lang="nl">Verzamelen</label>
  <comment xml:lang="en">Describes the action that is performed whenever resources are aggregated with a collectively defined tag.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit lorsque des ressources sont aggrégées autour d'un tag défini de manière collective.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft de handeling die verricht wordt wanneer bronnen worden geagreggeerd onder een gezamenlijk gedefinieerde tag.</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="Ask">
@@ -219,7 +220,7 @@
  <label xml:lang="nl">Vraag stellen</label>
  <comment xml:lang="en">Describes the action that is performed with a tag by asking a question.</comment>
  <comment xml:lang="fr">Décrit l'action que l'on accomplit avec tag dès lors que celui-ci est utilisé pour poser une question.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft de handeling die met de tag verricht wordt als het stellen van een vraag.</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="ManualTagAction">
@@ -229,7 +230,7 @@
  <label xml:lang="nl">Handmatige taghandeling</label>
  <comment xml:lang="en">Describes tags as manually associated to a resource by a human.</comment>
  <comment xml:lang="fr">Décrit des tags associés manuellement à une ressource par un être humain.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft tags als handmatig met een bron geasssocieerd door een mens</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="AutoTagAction">
@@ -239,7 +240,7 @@
  <label xml:lang="nl">Geautomatiseerde taghandeling</label>
  <comment xml:lang="en">Describes tags as automatically generated and/or associated to a resource by a computer.</comment>
  <comment xml:lang="fr">Décrit des tags générés et/ou associés automatiquement à une ressource par une machine.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Beschrijft tags als zijnde gegenereerd en/of automatisch met een bron geasoccieerd, door een computerprogramma.</comment>
 </owl:Class>
 
 <owl:Class rdf:ID="WebConceptTagAction">
@@ -528,7 +529,7 @@ Status : Agree (Alex, mildly) Disagree  -->
  <range rdf:resource="#PartOfWebRepresentation"/>
  <comment xml:lang="en">Property used when the label of a tag indicates which part of a Webpresentation is being tagged.</comment>
  <comment xml:lang="fr">Propriété utilisée quand le libellé d'un tag indique quelle partie de la représentation d'une ressource sur le Web est taguée.</comment>
- <comment xml:lang="nl"></comment>
+ <comment xml:lang="nl">Eigenschap die gebruikt wordt wanneer de </comment>
 </rdf:Property>
 
 <!-- * Relation used with the nt:Ask TagAction * -->
